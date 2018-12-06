@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/vip_price_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/user_and_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/and_img"
+            android:layout_width="280px"
+            android:layout_height="280px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="78px"
+            android:background="@mipmap/and_yuyue_no" />
+
+        <TextView
+            android:id="@+id/and_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/and_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="87px"
+            android:gravity="center"
+            android:text="@string/no_deal_record"
+            android:textColor="@color/colore_home3"
+            android:textSize="28px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20px">
+
+        <ListView
+            android:id="@+id/user_record_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" />
+    </RelativeLayout>
+
+</LinearLayout>

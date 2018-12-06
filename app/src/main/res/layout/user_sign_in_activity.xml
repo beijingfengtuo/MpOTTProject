@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/user_sign_title"
+        layout="@layout/user_title_in" />
+
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40px">
+
+        <RelativeLayout
+            android:id="@+id/user_sign_in_rl1"
+            android:layout_width="wrap_content"
+            android:layout_height="100px">
+
+            <ImageView
+                android:id="@+id/sign_in_head"
+                android:layout_width="45px"
+                android:layout_height="45px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="90px"
+                android:background="@mipmap/user_sign_in_head" />
+
+            <EditText
+                android:id="@+id/user_sign_in_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10px"
+                android:layout_toRightOf="@id/sign_in_head"
+                android:background="@null"
+                android:hint="@string/user_sign_in_head_name"
+                android:maxLength="18"
+                android:numeric="integer"
+                android:singleLine="true"
+                android:textColorHint="@color/colore_home9"
+                android:textSize="@dimen/user_sign_in_text" />
+
+            <ImageView
+                android:layout_width="590px"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/bording_hui" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/user_sign_in_rl2"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_below="@+id/user_sign_in_rl1">
+
+            <ImageView
+                android:id="@+id/sign_in_password"
+                android:layout_width="45px"
+                android:layout_height="45px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="90px"
+                android:background="@drawable/user_sign_in_password2" />
+
+            <EditText
+                android:id="@+id/user_sign_in_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10px"
+                android:layout_toRightOf="@id/sign_in_password"
+                android:background="@null"
+                android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:hint="@string/user_sign_in_password_name"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:singleLine="true"
+                android:textColorHint="@color/colore_home9"
+                android:textSize="@dimen/user_sign_in_text" />
+
+            <ImageView
+                android:layout_width="590px"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/bording_hui" />
+
+            <ImageView
+                android:id="@+id/user_sign_in_unvisible"
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="87px"
+                android:background="@drawable/user_sign_unvisible" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/user_sign_in_forget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/user_sign_in_rl2"
+            android:layout_marginRight="74px"
+            android:layout_marginTop="14px"
+            android:gravity="center"
+            android:text="@string/user_sign_in_forget_name"
+            android:textColor="@color/colore_home9"
+            android:textSize="@dimen/user_sign_in_text"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/user_sign_in_btn"
+            android:layout_width="590px"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_sign_in_rl2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="110px"
+            android:background="@drawable/submit_bg1"
+            android:gravity="center"
+            android:text="@string/user_sign_in_up_btn"
+            android:textColor="@color/white"
+            android:textSize="30px" />
+
+        <Button
+            android:id="@+id/user_sign_in_register_text"
+            android:layout_width="590px"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_sign_in_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30px"
+            android:background="@drawable/register_bg1"
+            android:gravity="center"
+            android:text="@string/user_sign_in_phone_comit"
+            android:textColor="@color/red3"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/sign_in_three_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="186px"
+            android:text="@string/user_sign_in_three_name"
+            android:textColor="@color/colore_home9"
+            android:textSize="24px" />
+
+        <Button
+            android:id="@+id/user_sign_in_weixin_btn"
+            android:layout_width="105px"
+            android:layout_height="87px"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="70px"
+            android:background="@drawable/user_sign_in_weixin" />
+
+    </RelativeLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/vip_price_color"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130px"
+            android:textSize="34px"
+            android:textColor="@color/black2"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/login_text_df"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32px"
+            android:textSize="22px"
+            android:textColor="@color/colore_home9"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/login_text3"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_login"
+            android:layout_width="442px"
+            android:layout_height="86px"
+            android:layout_marginTop="145px"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/wx_sign_bj">
+
+            <Button
+                android:id="@+id/user_sign_in_weixin_btn"
+                android:layout_width="60px"
+                android:layout_height="50px"
+                android:layout_marginLeft="106px"
+                android:background="@drawable/user_sign_in_weixin" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28px"
+                android:textColor="@color/white"
+                android:text="@string/wx_login_text"
+                android:layout_toRightOf="@id/user_sign_in_weixin_btn"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="370px"
+            android:layout_height="76px"
+            android:layout_marginTop="152px"
+            android:layout_marginBottom="486px"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/wx_sgin_footer"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="tag_first" type="id"></item>
+    <item name="is_record_recyclerview" type="id"></item>
+    <item name="is_record_recyclerview_itemView" type="id"></item>
+    <item name="is_switcher_recyclerview_item" type="id"></item>
+
+</resources>

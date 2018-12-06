@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        android:id="@+id/home_title_head"
+        layout="@layout/home_title_in"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@mipmap/home_tab_bj">
+
+        <ImageView
+            android:id="@+id/home_channelmanagement"
+            android:layout_width="36px"
+            android:layout_height="36px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="36px"
+            android:src="@mipmap/home_tabs_all"/>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/home_tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="60px"
+            android:layout_marginRight="20px"
+            android:layout_marginLeft="30px"
+            android:layout_centerVertical="true"
+            app:tabIndicatorColor="@color/white"
+            android:layout_marginBottom="20px"
+            app:tabIndicatorHeight="6px"
+            app:tabMode="scrollable"
+            android:layout_toLeftOf="@+id/home_channelmanagement"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextAppearance="@style/HomeFragmentTabLayoutText"
+            app:tabTextColor="@color/channel_inag" />
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/home_viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/space_relativelayout">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/space_imagview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/space_textview"
+            android:background="@color/home_bg_color"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/space_textviewtime"
+            android:layout_width="wrap_content"
+            android:layout_height="35px"
+            android:layout_above="@+id/space_textview"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6px"
+            android:layout_marginBottom="6px"
+            android:paddingRight="10px"
+            android:paddingLeft="10px"
+            android:gravity="center_vertical"
+            android:textColor="@color/bg_focus"
+            android:background="@mipmap/time_bg"
+            android:textSize="21px"
+            android:text="时长: 12:50" />
+
+        <TextView
+            android:id="@+id/space_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/space_textview1"
+            android:layout_marginLeft="10px"
+            android:layout_marginTop="20px"
+            android:textColor="@color/home_text_color"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textSize="24px" />
+
+        <TextView
+            android:id="@+id/space_textview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10px"
+            android:textColor="@color/home_text_color"
+            android:layout_marginTop="10px"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textSize="22px" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

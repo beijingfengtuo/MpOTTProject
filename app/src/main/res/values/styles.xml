@@ -1,0 +1,200 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ButtonBar">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@android:drawable/bottom_bar</item>
+    </style>
+    <style name="ButtonBarButton"></style>
+
+    <style name="FullscreenTheme" parent="android:Theme.NoTitleBar.Fullscreen">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/black_hui5</item>
+    </style>
+
+    <style name="FullscreenThemes" parent="android:Theme.Black.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@null</item>
+
+     <!--   <item name="metaButtonBarStyle">@null</item>
+        <item name="metaButtonBarButtonStyle">@null</item> -->
+    </style>
+
+
+    <style name="TransitionsTheme" parent="@android:style/Theme">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/black_hui5</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- 设置activity切换动画 -->
+        <item name="android:windowAnimationStyle">@style/activityAnimation</item>
+    </style>
+    <!-- animation 样式 -->
+    <style name="activityAnimation" parent="@android:style/Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_right_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_left_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_right_out</item>
+    </style>
+
+    <style name="TwoWayView" parent="TwoWayViewBase">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:clipToPadding">false</item>
+    </style>
+
+    <style name="TwoWayViewBase">
+        <item name="android:background">#999999</item>
+    </style>
+
+    <declare-styleable name="SpringIndicator">
+
+        <!--tab text color -->
+        <attr name="siTextColor" format="reference" />
+
+        <!--tab text color which is selected-->
+        <attr name="siSelectedTextColor" format="reference" />
+
+        <!--tab item bg -->
+        <attr name="siTextBg" format="reference" />
+
+        <!--tab text size-->
+        <attr name="siTextSize" format="dimension" />
+
+        <!--indicator bg color-->
+        <attr name="siIndicatorColor" format="reference" />
+
+        <!--indicator bg colors. should equals your titles count-->
+        <attr name="siIndicatorColors" format="reference" />
+
+        <!--max indicator radius-->
+        <attr name="siRadiusMax" format="dimension" />
+
+        <!--min indicator radius when moving-->
+        <attr name="siRadiusMin" format="dimension" />
+
+    </declare-styleable>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <!--玩票页面的Tab布局样式-->
+    <style name="MyTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="ThreeFristRecyclerView" parent="TwoWayViewBase">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:background">@color/transparent</item>
+        <!--<item name="android:layout_margin">0dp</item>-->
+        <item name="android:paddingLeft">20px</item>
+        <item name="android:paddingRight">20px</item>
+        <item name="android:clipToPadding">false</item>
+    </style>
+
+    <style name="FullscreenThemeBan" parent="android:Theme.NoTitleBar.Fullscreen">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@color/lucency_bt</item>
+    </style>
+
+    <!--首页的Tab布局样式-->
+    <style name="HomeFragmentTabLayoutText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!--欢迎和主页主题-->
+    <style name="Welcome" parent="android:Theme.NoTitleBar.Fullscreen">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!--筛选页面的Tab布局样式-->
+    <style name="ScreeningTabTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <!--玩票页面小视屏列表页面-->
+    <style name="ThreeOtherRecyclerView" parent="TwoWayViewBase">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:clipToPadding">false</item>
+    </style>
+
+    <!--分享Dialog布局样式-->
+    <style name="transcutestyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@android:color/transparent</item> <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item> <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item> <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item> <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item> <!-- 背景透明 -->
+        <item name="android:backgroundDimAmount">0.7</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <!--分享Dialog布局显示样式-->
+    <style name="fackstyle1" parent="android:Animation">
+        <!--进入时的动画-->
+        <item name="@android:windowEnterAnimation">@anim/dialog_enter</item>
+        <!--退出时的动画-->
+        <item name="@android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+
+    <!--分享Dialog布局显示样式-->
+    <style name="fackstyle2" parent="android:Animation">
+        <!--进入时的动画-->
+        <item name="@android:windowEnterAnimation">@anim/dialog_enter2</item>
+        <!--退出时的动画-->
+        <item name="@android:windowExitAnimation">@anim/dialog_exit2</item>
+    </style>
+
+    <style name="UpgradeDialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+    <style name="CustomDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="exitDialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+    <style name="exitDialogStyle" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+
+</resources>

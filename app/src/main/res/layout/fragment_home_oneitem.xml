@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/homeone_error_nonetwork"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/homeone_error_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/nowifi"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/homeone_error_img"
+            android:layout_marginTop="20px"
+            android:textSize="30px"
+            android:textColor="@color/black"
+            android:text="@string/homeone_onerror_network"/>
+    </RelativeLayout>
+
+    <cn.cibnmp.ott.library.pullable.PullToRefreshLayout
+        android:id="@+id/homeone_fragment_ptfresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/refresh_head" />
+
+        <cn.cibnmp.ott.widgets.PmRecyclerView
+            android:id="@+id/homeone_fragment_recyclerview"
+            style="@style/ThreeFristRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:descendantFocusability="afterDescendants"
+            android:orientation="vertical"
+            android:visibility="visible" />
+
+        <include layout="@layout/load_more" />
+    </cn.cibnmp.ott.library.pullable.PullToRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/homeone_fragment_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/transparent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/octv_ivpi"
+            android:layout_width="66px"
+            android:layout_height="66px"
+            android:layout_centerInParent="true"
+            android:src="@drawable/progress_icon" />
+    </RelativeLayout>
+
+</RelativeLayout>

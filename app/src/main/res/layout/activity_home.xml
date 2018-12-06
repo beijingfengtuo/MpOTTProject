@@ -1,0 +1,292 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/home_all"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/home_nonetwork"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/yang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/nowifi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/yang"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="20px"
+                android:text="@string/no_network"
+                android:textColor="@color/black"
+                android:textSize="30px" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/home_title"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/home_title_bottom"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/home_rl1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:clickable="true">
+
+                <ImageButton
+                    android:id="@+id/home_btn1"
+                    android:layout_width="84px"
+                    android:layout_height="84px"
+                    android:layout_centerInParent="true"
+                    android:background="@mipmap/home1"
+                    android:clickable="false"
+                    android:focusable="false" />
+
+                <!--<ImageView-->
+                <!--android:id="@+id/img_home1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_marginRight="40px"-->
+                <!--android:layout_marginTop="5px"-->
+                <!--android:background="@mipmap/select"-->
+                <!--android:clickable="false"-->
+                <!--android:focusable="false"-->
+                <!--android:visibility="visible" />-->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/home_rl2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:clickable="true">
+
+                <ImageButton
+                    android:id="@+id/home_btn2"
+                    android:layout_width="84px"
+                    android:layout_height="84px"
+                    android:layout_centerInParent="true"
+                    android:background="@mipmap/list0"
+                    android:clickable="false"
+                    android:focusable="false" />
+
+                <!--<ImageView-->
+                <!--android:id="@+id/img_home2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_marginRight="40px"-->
+                <!--android:layout_marginTop="5px"-->
+                <!--android:background="@mipmap/select"-->
+                <!--android:clickable="false"-->
+                <!--android:focusable="false"-->
+                <!--android:visibility="invisible" />-->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/home_rl3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:clickable="true">
+
+                <ImageButton
+                    android:id="@+id/home_btn3"
+                    android:layout_width="84px"
+                    android:layout_height="84px"
+                    android:layout_centerInParent="true"
+                    android:background="@mipmap/vip0"
+                    android:clickable="false"
+                    android:focusable="false" />
+
+                <!--<ImageView-->
+                <!--android:id="@+id/img_home3"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_marginRight="40px"-->
+                <!--android:layout_marginTop="5px"-->
+                <!--android:background="@mipmap/select"-->
+                <!--android:clickable="false"-->
+                <!--android:focusable="false"-->
+                <!--android:visibility="invisible" />-->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/home_rl4"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:clickable="true">
+
+                <ImageButton
+                    android:id="@+id/home_btn4"
+                    android:layout_width="84px"
+                    android:layout_height="84px"
+                    android:layout_centerInParent="true"
+                    android:background="@mipmap/my0"
+                    android:clickable="false"
+                    android:focusable="false" />
+
+                <!--<ImageView-->
+                <!--android:id="@+id/img_home4"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_marginRight="40px"-->
+                <!--android:layout_marginTop="5px"-->
+                <!--android:background="@mipmap/select"-->
+                <!--android:clickable="false"-->
+                <!--android:focusable="false"-->
+                <!--android:visibility="invisible" />-->
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/home_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@id/home_title"
+            android:background="@color/linehuihome" />
+
+        <cn.cibnmp.ott.widgets.pmrecyclerview.widget.ViewPagerStop
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/home_line"
+            android:background="@color/white" />
+
+        <!--小窗口-->
+        <RelativeLayout
+            android:id="@+id/rl_home_small_view"
+            android:layout_width="260px"
+            android:layout_height="260px"
+            android:layout_above="@id/home_line"
+            android:layout_alignParentRight="true"
+            android:visibility="gone">
+
+            <FrameLayout
+                android:id="@+id/fl_home_small_video"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/img_home_small_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/home_time_jump"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/welcome_imageview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/welcome_time"
+                android:layout_width="140px"
+                android:layout_height="60px"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="40px"
+                android:layout_marginTop="40px"
+                android:background="@mipmap/welcome_time_bg"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="28px"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!--全屏布局-->
+    <FrameLayout
+        android:id="@+id/fl_home_full_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/home_error_nonetwork"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/home_error_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/nowifi" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/homeone_onerror_network"
+            android:textColor="@color/black"
+            android:textSize="30px"
+            android:layout_marginTop="40px"
+            android:layout_below="@+id/home_error_img"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/home_looding_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/home_looding_imag"
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:layout_centerInParent="true"
+            android:src="@drawable/progress_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/home_looding_imag"
+            android:layout_marginTop="30px"
+            android:layout_centerInParent="true"
+            android:textColor="#999999"
+            android:textSize="14sp"
+            android:text="正在加载"/>
+    </RelativeLayout>
+
+</RelativeLayout>

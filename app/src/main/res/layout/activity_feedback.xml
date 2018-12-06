@@ -1,0 +1,306 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ivory"
+    tools:context=".ui.user.setting.FeedbackActivity">
+
+    <include
+        android:id="@+id/feedback_title"
+        layout="@layout/home_title_in"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/feedback_title"
+        android:fillViewport="true"
+        android:background="@color/vip_price_color"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="80px"
+                    android:layout_marginLeft="30px"
+                    android:gravity="center_vertical"
+                    android:text="@string/encounter_question"
+                    android:textColor="@color/colore_home11"
+                    android:textSize="24px" />
+
+                <LinearLayout
+                    android:id="@+id/feedback_rg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20px"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/feedback_margins"
+                        android:layout_marginRight="@dimen/feedback_margins"
+                        android:layout_marginTop="35px"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/feedback_rb1"
+                            android:layout_width="0dp"
+                            android:layout_height="70px"
+                            android:layout_marginRight="@dimen/feedback_margins"
+                            android:layout_weight="1"
+                            android:background="@mipmap/player_white_bg1"
+                            android:button="@null"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="@string/feedback_rb1"
+                            android:textColor="@color/colore_home9"
+                            android:textSize="24px" />
+
+                        <CheckBox
+                            android:id="@+id/feedback_rb2"
+                            android:layout_width="0dp"
+                            android:layout_height="70px"
+                            android:layout_marginRight="@dimen/feedback_margins"
+                            android:layout_weight="1"
+                            android:background="@mipmap/player_white_bg1"
+                            android:button="@null"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="@string/feedback_rb2"
+                            android:textColor="@color/colore_home9"
+                            android:textSize="24px" />
+
+                        <CheckBox
+                            android:id="@+id/feedback_rb3"
+                            android:layout_width="0dp"
+                            android:layout_height="70px"
+                            android:layout_weight="1"
+                            android:background="@mipmap/player_white_bg1"
+                            android:button="@null"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="@string/feedback_rb3"
+                            android:textColor="@color/colore_home9"
+                            android:textSize="24px" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/feedback_margins"
+                        android:layout_marginRight="@dimen/feedback_margins"
+                        android:layout_marginTop="@dimen/feedback_margins"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/feedback_rb4"
+                            android:layout_width="0dp"
+                            android:layout_height="70px"
+                            android:layout_marginRight="@dimen/feedback_margins"
+                            android:layout_weight="1"
+                            android:background="@mipmap/player_white_bg1"
+                            android:button="@null"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="@string/feedback_rb4"
+                            android:textColor="@color/colore_home9"
+                            android:textSize="24px" />
+
+                        <CheckBox
+                            android:id="@+id/feedback_rb5"
+                            android:layout_width="0dp"
+                            android:layout_height="70px"
+                            android:layout_marginRight="@dimen/feedback_margins"
+                            android:layout_weight="1"
+                            android:background="@mipmap/player_white_bg1"
+                            android:button="@null"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="@string/feedback_rb5"
+                            android:textColor="@color/colore_home9"
+                            android:textSize="24px" />
+
+                        <CheckBox
+                            android:id="@+id/feedback_rb6"
+                            android:layout_width="0dp"
+                            android:layout_height="70px"
+                            android:layout_weight="1"
+                            android:background="@mipmap/player_white_bg1"
+                            android:button="@null"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="@string/feedback_rb6"
+                            android:textColor="@color/colore_home9"
+                            android:textSize="24px" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="24px"
+                        android:layout_marginLeft="@dimen/feedback_margins"
+                        android:layout_marginRight="@dimen/feedback_margins"
+                        android:layout_marginTop="@dimen/feedback_margins"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/feedback_rb7"
+                            android:layout_width="0dp"
+                            android:layout_height="70px"
+                            android:layout_marginRight="@dimen/feedback_margins"
+                            android:layout_weight="1"
+                            android:background="@mipmap/player_white_bg1"
+                            android:button="@null"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="@string/feedback_rb7"
+                            android:textColor="@color/colore_home9"
+                            android:textSize="24px" />
+
+                        <CheckBox
+                            android:id="@+id/feedback_rb8"
+                            android:layout_width="0dp"
+                            android:layout_height="70px"
+                            android:layout_marginRight="@dimen/feedback_margins"
+                            android:layout_weight="1"
+                            android:background="@mipmap/player_white_bg1"
+                            android:button="@null"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="@string/feedback_rb8"
+                            android:textColor="@color/colore_home9"
+                            android:textSize="24px" />
+
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="70px"
+                            android:layout_weight="1"
+                            android:background="@mipmap/player_white_bg1"
+                            android:button="@null"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:gravity="center"
+                            android:text="@string/feedback_rb9"
+                            android:textSize="24px"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20px"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="34px"
+                    android:paddingLeft="30px"
+                    android:text="@string/question_and_advise"
+                    android:textColor="@color/colore_home11"
+                    android:textSize="24px" />
+
+                <EditText
+                    android:id="@+id/feedback_question_ed"
+                    android:layout_width="670px"
+                    android:layout_height="190px"
+                    android:layout_marginBottom="34px"
+                    android:layout_marginLeft="@dimen/feedback_margins"
+                    android:layout_marginRight="@dimen/feedback_margins"
+                    android:layout_marginTop="34px"
+                    android:background="@drawable/player_white_bg"
+                    android:gravity="top"
+                    android:hint="@string/suggest"
+                    android:inputType="textMultiLine"
+                    android:lineSpacingExtra="5dp"
+                    android:minLines="14"
+                    android:textColor="@color/colore_home6"
+                    android:textColorHint="@color/black_hui5"
+                    android:textSize="13dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="34px"
+                        android:paddingLeft="@dimen/feedback_margins"
+                        android:text="@string/leave_you_phone"
+                        android:textColor="@color/colore_home11"
+                        android:textSize="24px" />
+
+                    <EditText
+                        android:id="@+id/feedback_num_ed"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:layout_marginBottom="34px"
+                        android:layout_marginLeft="@dimen/feedback_margins"
+                        android:layout_marginRight="@dimen/feedback_margins"
+                        android:layout_marginTop="34px"
+                        android:background="@drawable/player_white_bg"
+                        android:hint="@string/you_phone"
+                        android:maxLines="1"
+                        android:numeric="integer"
+                        android:padding="7dp"
+                        android:textColor="@color/colore_home6"
+                        android:textColorHint="@color/black_hui5"
+                        android:textSize="24px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_tid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/feedback_margins"
+                        android:layout_marginTop="26px"
+                        android:text="TID:7776-EA84-YT77-IU90"
+                        android:textColor="@color/colore_home8"
+                        android:textSize="24px" />
+
+                    <TextView
+                        android:id="@+id/tv_submit"
+                        android:layout_width="630px"
+                        android:layout_height="90px"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="26px"
+                        android:background="@mipmap/submit_bg2"
+                        android:gravity="center"
+                        android:text="@string/commit_feedback"
+                        android:textColor="@color/white"
+                        android:textSize="24px" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

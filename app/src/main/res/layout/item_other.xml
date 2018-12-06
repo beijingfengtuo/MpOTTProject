@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/other_relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10px">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true" >
+
+    <ImageView
+        android:id="@+id/qita_img_bg"
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/defaultpic"/>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/qita_img_bg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10px"
+        android:gravity="center"
+        android:textColor="@color/home_shadow_color"
+        android:textSize="15sp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

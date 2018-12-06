@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/webview_relativelayout_title"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/webview_fanhui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40px"
+            android:scaleType="fitXY"
+            android:src="@mipmap/channel_getback" />
+
+        <ImageView
+            android:id="@+id/webview_guanbi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40px"
+            android:layout_toRightOf="@+id/webview_fanhui"
+            android:scaleType="fitXY"
+            android:src="@mipmap/webview_close" />
+
+        <TextView
+            android:id="@+id/webview_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:textSize="30px" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/webview_linearlayout_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progresspar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="3dip"
+            android:progressDrawable="@drawable/jsbg" />
+
+        <!--显示网页区域-->
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/webview_relativelayout_onerror"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/webview_relativelayout_onerror1"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="100px">
+
+            <ImageView
+                android:id="@+id/webview_fanhui2"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="30px"
+                android:scaleType="fitXY"
+                android:src="@mipmap/channel_getback" />
+
+            <TextView
+                android:id="@+id/webview_textview1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30px"
+                android:text="@string/webview_title"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/progresspar1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="3dip"
+            android:layout_below="@+id/webview_relativelayout_onerror1"
+            android:progressDrawable="@drawable/jsbg" />
+
+        <ImageView
+            android:id="@+id/webview_fanhui1"
+            android:layout_width="300px"
+            android:layout_height="300px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200px"
+            android:scaleType="fitXY"
+            android:src="@mipmap/webview_error" />
+
+        <TextView
+            android:id="@+id/webview_textview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="30px"
+            android:text="@string/webview_onerror_text"
+            android:textColor="@color/colore_home7" />
+
+        <TextView
+            android:id="@+id/webview_textview3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/webview_textview2"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20px"
+            android:text="@string/webview_onerror_text1"
+            android:textColor="@color/colore_home7" />
+
+    </RelativeLayout>
+
+</LinearLayout>

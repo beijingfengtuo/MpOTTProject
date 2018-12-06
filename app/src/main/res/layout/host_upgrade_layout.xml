@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000"
+    android:clipChildren="false">
+
+
+    <cn.cibnmp.ott.widgets.pmrecyclerview.widget.CImageView
+        android:id="@+id/logo"
+        android:layout_width="579px"
+        android:layout_height="930px"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/upgrade_logo" />
+
+    <cn.cibnmp.ott.widgets.pmrecyclerview.widget.RoundedImageView
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/logo"
+        android:layout_alignRight="@+id/logo"
+        android:layout_alignTop="@+id/logo"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="75px"
+        android:src="@mipmap/cancel_updata" />
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center">
+
+        <cn.cibnmp.ott.widgets.pmrecyclerview.widget.CTextView
+            android:id="@+id/vername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:ellipsize="end"
+            android:text="5.2.2.2"
+            android:layout_marginTop="100px"
+            android:textColor="@color/black"
+            android:textSize="32px"
+            android:visibility="visible" />
+
+        <cn.cibnmp.ott.widgets.pmrecyclerview.widget.CTextView
+            android:id="@+id/verinfo"
+            android:layout_width="480px"
+            android:layout_height="280px"
+            android:layout_alignLeft="@id/title"
+            android:layout_below="@id/vername"
+            android:layout_marginTop="15px"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:maxLines="30"
+            android:padding="20px"
+            android:verticalScrollbarPosition="right"
+            android:scrollbarStyle="insideInset"
+            android:requiresFadingEdge="vertical"
+            android:scrollbarThumbVertical="@drawable/text_scroll_02"
+            android:scrollbarTrackVertical="@drawable/text_scroll_01"
+            android:scrollbars="vertical"
+            android:singleLine="false"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="24px" />
+
+    </RelativeLayout>
+
+
+    <cn.cibnmp.ott.widgets.pmrecyclerview.widget.CRelativeLayout
+        android:id="@+id/btnLayout"
+        android:layout_width="190px"
+        android:layout_height="190px"
+        android:layout_below="@+id/layout1"
+        android:layout_marginTop="24px"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:id="@+id/optionLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/forceLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <ImageView
+                android:id="@+id/sure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/updata_button"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/forceLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:visibility="gone">
+
+            <cn.cibnmp.ott.widgets.pmrecyclerview.widget.CButton
+                android:id="@+id/ok"
+                android:layout_width="250px"
+                android:layout_height="80px"
+                android:background="@mipmap/channel_screen"
+                android:gravity="center"
+                android:text="experience_immediately"
+                android:textColor="@color/black"
+                android:textSize="32px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/downloadLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <cn.cibnmp.ott.widgets.pmrecyclerview.widget.UpgradeGradientColorProgressView
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <cn.cibnmp.ott.widgets.pmrecyclerview.widget.CTextView
+                android:id="@+id/proTv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50px"
+                android:gravity="center"
+                android:text="@string/is_downloading"
+                android:textColor="@color/black"
+                android:textSize="32px" />
+
+        </LinearLayout>
+
+    </cn.cibnmp.ott.widgets.pmrecyclerview.widget.CRelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <cn.cibnmp.ott.widgets.pmrecyclerview.widget.CTextView
+            android:id="@+id/errorText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="抱歉下载失败"
+            android:textColor="@color/black"
+            android:textSize="32px" />
+
+        <cn.cibnmp.ott.widgets.pmrecyclerview.widget.CTextView
+            android:id="@+id/errorText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/errorText1"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="30dp"
+            android:padding="0dp"
+            android:text="请联系客服"
+            android:textColor="@color/black"
+            android:textSize="32px" />
+
+        <cn.cibnmp.ott.widgets.pmrecyclerview.widget.CButton
+            android:id="@+id/errorOk"
+            android:layout_width="250px"
+            android:layout_height="80px"
+            android:layout_below="@id/errorText1"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="150dp"
+            android:background="@mipmap/channel_screen"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/black"
+            android:textSize="32px" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

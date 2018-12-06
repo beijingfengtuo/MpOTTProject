@@ -1,0 +1,174 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <declare-styleable name="TvRecyclerView">
+        <attr name="android:orientation" tools:ignore="ResourceName"/>
+        <attr name="tv_layoutManager" format="string"/>
+        <attr name="tv_numColumns" format="integer"/>
+        <attr name="tv_numRows" format="integer"/>
+        <attr name="tv_selectedItemOffsetStart" format="dimension"/>
+        <attr name="tv_selectedItemOffsetEnd" format="dimension"/>
+        <attr name="tv_selectedItemIsCentered" format="boolean"/>
+        <attr name="tv_isInterceptKeyEvent" format="boolean"/>
+        <attr name="tv_isMenu" format="boolean"/>
+        <attr name="tv_isSelectFirstVisiblePosition" format="boolean"/>
+        <attr name="tv_loadMoreBeforehandCount" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="TvRecyclerView_SpacingItemDecoration">
+        <attr name="android:verticalSpacing" tools:ignore="ResourceName"/>
+        <attr name="android:horizontalSpacing" tools:ignore="ResourceName"/>
+    </declare-styleable>
+
+    <declare-styleable name="TvRecyclerView_DividerItemDecoration">
+        <attr name="android:divider" tools:ignore="ResourceName"/>
+        <attr name="tv_verticalDivider" format="reference"/>
+        <attr name="tv_horizontalDivider" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="TvRecyclerView_StaggeredGridViewChild">
+        <attr name="tv_span" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="TvRecyclerView_SpannableGridViewChild">
+        <attr name="tv_colSpan" format="integer"/>
+        <attr name="tv_rowSpan" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="LabelsView">
+        <attr name="max_labels" format="integer" />
+        <attr name="text_color" format="color"/>
+        <attr name="text_size" format="dimension"/>
+        <attr name="label_background_res" format="reference"/>
+        <attr name="label_clickable" format="boolean" />
+        <attr name="show_cross" format="boolean" />
+        <attr name="label_padding" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="CButtonAttr">
+        <attr name="layout_alignParentRight" format="boolean" />
+        <attr name="layout_alignParentLeft" format="boolean" />
+        <attr name="layout_alignParentTop" format="boolean" />
+        <attr name="layout_alignParentBottom" format="boolean" />
+        <attr name="layout_centerVertical" format="boolean" />
+        <attr name="layout_centerHorizontal" format="boolean" />
+        <attr name="layout_centerInParent" format="boolean" />
+        <attr name="layout_below" format="integer" />
+        <attr name="layout_toLeftOf" format="integer" />
+        <attr name="layout_toRightOf" format="integer" />
+        <attr name="layout_above" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundIndicatorView">
+        <!--最大数值-->
+        <attr name="maxNum" format="integer"/>
+        <!--圆盘起始角度-->
+        <attr name="startAngle" format="integer"/>
+        <!--圆盘扫过的角度-->
+        <attr name="sweepAngle" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="LetterSpacingTextView">
+        <attr name="textSpacing" format="float"/>
+        <attr name="text" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="ViewPagerIndicator">
+        <!-- Style of the tab indicator's tabs. -->
+        <attr name="vpiTabPageIndicatorStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundedImageView">
+        <attr name="riv_corner_radius" format="dimension" />
+        <attr name="riv_corner_radius_top_left" format="dimension" />
+        <attr name="riv_corner_radius_top_right" format="dimension" />
+        <attr name="riv_corner_radius_bottom_left" format="dimension" />
+        <attr name="riv_corner_radius_bottom_right" format="dimension" />
+        <attr name="riv_border_width" format="dimension" />
+        <attr name="riv_border_color" format="color" />
+        <attr name="riv_mutate_background" format="boolean" />
+        <attr name="riv_oval" format="boolean" />
+        <attr name="android:scaleType" />
+        <attr name="riv_tile_mode">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+        <attr name="riv_tile_mode_x">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+        <attr name="riv_tile_mode_y">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <integer-array  name="upgrade_spring_progress_colors">
+        <item>@color/upgrade_progress_color_1</item>
+        <item>@color/upgrade_progress_color_2</item>
+        <item>@color/upgrade_progress_color_3</item>
+        <item>@color/upgrade_progress_color_4</item>
+        <item>@color/upgrade_progress_color_5</item>
+        <item>@color/upgrade_progress_color_6</item>
+        <item>@color/upgrade_progress_color_7</item>
+        <item>@color/upgrade_progress_color_8</item>
+        <item>@color/upgrade_progress_color_9</item>
+        <item>@color/upgrade_progress_color_10</item>
+        <item>@color/upgrade_progress_color_11</item>
+    </integer-array>
+
+    <style name="UpgradeDialogStyle" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_right_enter</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowExitAnimation">@anim/dialog_right_exit</item>
+    </style>
+
+    <declare-styleable name="swipelistviewstyle">
+        <attr name="right_width" format="dimension"></attr>
+    </declare-styleable>
+
+    -<declare-styleable name="PercentLayout_Layout">
+
+    <attr name="layout_widthPercent" format="string"/>
+
+    <attr name="layout_heightPercent" format="string"/>
+
+    <attr name="layout_marginPercent" format="string"/>
+
+    <attr name="layout_marginLeftPercent" format="string"/>
+
+    <attr name="layout_marginTopPercent" format="string"/>
+
+    <attr name="layout_marginRightPercent" format="string"/>
+
+    <attr name="layout_marginBottomPercent" format="string"/>
+
+    <attr name="layout_marginStartPercent" format="string"/>
+
+    <attr name="layout_marginEndPercent" format="string"/>
+
+    <attr name="layout_textSizePercent" format="string"/>
+
+    <attr name="layout_maxWidthPercent" format="string"/>
+
+    <attr name="layout_maxHeightPercent" format="string"/>
+
+    <attr name="layout_minWidthPercent" format="string"/>
+
+    <attr name="layout_minHeightPercent" format="string"/>
+
+    <attr name="layout_paddingPercent" format="string"/>
+
+    <attr name="layout_paddingTopPercent" format="string"/>
+
+    <attr name="layout_paddingBottomPercent" format="string"/>
+
+    <attr name="layout_paddingLeftPercent" format="string"/>
+
+    <attr name="layout_paddingRightPercent" format="string"/>
+
+</declare-styleable>
+
+</resources>

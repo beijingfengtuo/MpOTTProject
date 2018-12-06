@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 上拉下拉颜色 -->
+    <color name="pull_bg">#f0f0f0</color>
+    <!-- 上拉下拉颜色 -->
+    <color name="pullorload_success">#00a5ea</color>
+    <!-- 上拉下拉颜色 -->
+    <color name="pullorload_default">#666666</color>
+
+</resources>

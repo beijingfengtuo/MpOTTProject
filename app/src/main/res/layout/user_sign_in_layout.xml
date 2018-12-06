@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/uset_sign_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10sp"
+        android:text="@string/home_title_text"
+        android:textColor="@color/colore_home3"
+        android:textSize="28px" />
+    
+    <Button
+        android:id="@+id/uset_sign_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12sp"
+        android:layout_marginTop="18px"
+        android:layout_marginBottom="18px"
+        android:background="@drawable/login" />
+    
+</RelativeLayout>

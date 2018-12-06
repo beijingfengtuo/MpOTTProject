@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/user_title_ll"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@color/ivory"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/user_title_day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:text="@string/unknown"
+            android:textColor="@color/colore_home6"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/user_left_rl"
+        android:layout_width="match_parent"
+        android:layout_height="230px"
+        android:layout_below="@id/user_title_ll"
+        android:layout_marginRight="27px">
+
+        <ImageView
+            android:id="@+id/slect_btn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:background="@drawable/unchecked" />
+
+        <RelativeLayout
+            android:id="@+id/user_left_img_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:layout_toRightOf="@id/slect_btn">
+
+            <ImageView
+                android:id="@+id/user_left_img"
+                android:layout_width="290px"
+                android:layout_height="163px"
+                android:scaleType="fitXY"
+                android:src="@drawable/defaultpic" />
+
+            <ImageView
+                android:id="@+id/yuyue_tag2"
+                android:layout_width="65px"
+                android:layout_height="24px"
+                android:layout_margin="10px"
+                android:background="@drawable/yuyue_tag_bg2" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="32px"
+            android:layout_marginLeft="24px"
+            android:layout_marginTop="40px"
+            android:layout_toRightOf="@id/user_left_img_rl">
+
+            <TextView
+                android:id="@+id/vidio_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@string/unknown"
+                android:textColor="@color/black2"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/vidio_londing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="@string/unknown"
+                android:textColor="@color/colore_home9"
+                android:textSize="24px" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/yuyue_tag"
+            android:layout_width="110px"
+            android:layout_height="110px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/yuyue_tag_bg1" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

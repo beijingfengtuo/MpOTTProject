@@ -1,0 +1,344 @@
+<resources>
+    <string name="app_name">东方大剧院</string>
+
+    <!-- 版本升级系列 -->
+    <string name="update_title">提示</string>
+    <string name="update_yes">立即升级</string>
+    <string name="update_no">暂不升级</string>
+    <string name="update_title_name">发现新版本\u3000</string>
+    <string name="error_toast">获取数据失败</string>
+    <string name="version_update">版本更新</string>
+    <string name="clear_record">确定要清空搜索记录吗?</string>
+    <string name="suggest">请输入您的问题或建议，描述问题现象，出现问题的   影片,操作，城市，网络供应商及宽带等详细信息（200字以内)</string>
+
+    <!--意见反馈-->
+    <string name="qu_content">选择您遇到的问题或输入意见建议后进行提交</string>
+    <string name="contact_infomation">请输入您的联系方式</string>
+    <string name="advance">亲，只能提二百字以下的建议</string>
+    <string name="submit_frequently">提交过于频繁，请稍后重试</string>
+    <string name="try_again_later">稍后重试</string>
+    <string name="encounter_question">遇到问题了?请将问题反馈给我们吧！</string>
+    <string name="submit_success">提交成功，我们会尽快处理您反馈的问题</string>
+    <string name="close">关闭</string>
+    <string name="feedback_rb1">无法播放</string>
+    <string name="feedback_rb2">播放卡顿</string>
+    <string name="feedback_rb3">播放中断</string>
+    <string name="feedback_rb4">音画不同步</string>
+    <string name="feedback_rb5">程序崩溃</string>
+    <string name="feedback_rb6">无法登录</string>
+    <string name="feedback_rb7">操作复杂</string>
+    <string name="feedback_rb8">其他问题</string>
+    <string name="feedback_rb9">播放中断</string>
+    <string name="question_and_advise">问题与建议</string>
+    <string name="leave_you_phone">留下你的联系方式</string>
+    <string name="you_phone">你的联系方式    QQ/电话</string>
+    <string name="commit_feedback">提交反馈</string>
+
+    <!--设置-->
+    <string name="setting_user_close">退出登录</string>
+    <string name="about_us">\u3000\u3000《东方大剧院》是由CIBN互联网电视联合海内外一流演艺机构，
+        重磅打造的中国第一互联网观剧平台，弘扬中国优秀的传统戏剧文化。
+        让中国优秀的戏剧、戏曲等舞台表演艺术，借助互联网平台走进千家万户，
+        在这里观众可以看到京剧、豫剧、越剧、评剧、黄梅戏、昆曲、话剧、歌剧、舞剧、音乐剧、曲艺等多姿多彩的舞台现场演出，
+        坐在家中即可身临其境的同步欣赏舞台表演艺术的超凡魅力。
+        \n\u3000\u3000在东方大剧院，您可以在导航管理定制您喜爱的专区，可以看到精彩大戏现场转播，
+        丰富的戏剧内容点播，看到从来没有看到过的台前幕后，这里名角儿云集，有老一辈的艺术家，
+        有主力的中生代，还有更多青年才俊。如果您热爱表演，还可以在这里展示您的才艺与风采。</string>
+
+    <!--底部文字-->
+    <string name="slogan">国广东方网络（北京）有限公司</string>
+
+    <!-- 首页Adapter litem -->
+    <string name="my_cahnnel">频道</string>
+    <string name="other_channel">备选频道</string>
+    <string name="tip_drag">长按编辑,拖拽排序</string>
+    <string name="edit">编辑</string>
+    <string name="finish">完成</string>
+    <string name="eedit">编辑</string>
+    <string name="weicomeaction">点击跳转</string>
+    <string name="defaultsort_order">默认排序</string>
+    <string name="title_activity_vouchers">VouchersActivity</string>
+
+    <string name="no_message" >您没有收到任何消息！</string>
+    <string name="user_msg_delete_title">提示</string>
+    <string name="user_msg_delete_name">确认删除？</string>
+    <!-- UserPlayHistoryFragment播放记录 -->
+    <string name="user_play_delete_all_title">清除播放记录</string>
+    <string name="user_play_delete_all_name">是否清除所有内容？</string>
+    <string name="video_look_finish">已看完</string>
+    <string name="load_all">施主，没有内容了，请回头吧</string>
+    <string name="video_look_to">已观看至</string>
+    <string name="video_look_to_o">已观看至0%</string>
+
+    <!-- 登录系列 -->
+    <string name="user_sign_in_head_name">手机号</string>
+    <string name="user_sign_in_password_name">6-16位数字或字母</string>
+    <string name="user_sign_in_password_name1">设置6-16位字母数字密码</string>
+    <string name="user_sign_in_password_name2">密码</string>
+    <string name="user_sign_in_password_name3">确认密码</string>
+    <string name="user_sign_in_up_btn">登录</string>
+    <string name="user_sign_in_comitname">立即注册</string>
+    <string name="user_sign_in_three_name">使用合作帐号登录</string>
+    <string name="user_sign_in_forget_name">忘记密码？</string>
+    <string name="user_sign_in_phone">手机号</string>
+    <string name="user_sign_in_phone_code">验证码</string>
+    <string name="user_sign_in_phone_get_code">获取验证码</string>
+    <string name="user_sign_in_phone_comit">注册</string>
+    <string name="user_sign_in_phone_next">下一步</string>
+    <string name="user_sign_in_phone_yes">确定</string>
+    <string name="user_sign_in_phone_bottomname">已有帐号，立即登录</string>
+    <string name="user_sign_in_phone_agreement">已阅读并同意《用户服务协议》</string>
+    <string name="user_sign_in_phone_agreement1">《用户服务协议》</string>
+    <string name="user_sign_in_phone_time">秒后再次发送</string>
+    <string name="user_sign_in_vip_no_text">您还没有开通会员</string>
+    <string name="user_sign_in_title">CIBN大剧院会员</string>
+    <string name="home_title_text">开通会员可免广告, 更多院线大片免费看</string>
+
+    <string name="vip_agreement">已阅读并同意《大剧院会员协议》</string>
+
+    <string name="use_voucher">查看可用代金券</string>
+
+
+
+    <!--************************************************玩票播放器************************************************-->
+    <string name="network_ok">当前网络可用</string>
+    <string name="network_no">当前网络不可用</string>
+    <string name="error_play_url">播放地址错误</string>
+    <string name="text_weizhi">未知</string>
+
+    <!--播放器IjkVideoView类说明-->
+    <string name="VideoView_error_text_invalid_progressive_playback">Invalid progressive playback</string>
+    <string name="VideoView_error_text_unknown">Unknown</string>
+    <string name="VideoView_error_button">OK</string>
+
+    <string name="VideoView_render_none">Render: None</string>
+    <string name="VideoView_render_surface_view">Render: SurfaceView</string>
+    <string name="VideoView_render_texture_view">Render: TextureView</string>
+
+    <string name="VideoView_player_none">Player: None</string>
+    <string name="VideoView_player_AndroidMediaPlayer">Player: AndroidMediaPlayer</string>
+    <string name="VideoView_player_IjkMediaPlayer">Player: IjkMediaPlayer</string>
+    <string name="VideoView_player_IjkExoMediaPlayer">Player: IjkExoMediaPlayer</string>
+
+    <string name="TrackType_video">Video</string>
+    <string name="TrackType_audio">Audio</string>
+    <string name="TrackType_subtitle">Subtitle</string>
+    <string name="TrackType_timedtext">Timed text</string>
+    <string name="TrackType_metadata">Meta data</string>
+    <string name="TrackType_unknown">Unknown</string>
+
+    <!--视频比例说明-->
+    <string name="N_A">N/A</string>
+    <string name="VideoView_ar_aspect_fit_parent">Aspect / Fit parent</string>
+    <string name="VideoView_ar_aspect_fill_parent">Aspect / Fill parent</string>
+    <string name="VideoView_ar_aspect_wrap_content">Aspect / Wrap content</string>
+    <string name="VideoView_ar_match_parent">Free / Fill parent</string>
+    <string name="VideoView_ar_16_9_fit_parent">16:9 / Fit parent</string>
+    <string name="VideoView_ar_4_3_fit_parent">4:3 / Fit parent</string>
+
+
+    <!--Setting类说明-->
+    <string name="pref_key_player">pref.player</string>
+    <string name="pref_key_enable_surface_view">pref.enable_surface_view</string>
+    <string name="pref_key_enable_no_view">pref.enable_no_view</string>
+    <string name="pref_key_enable_texture_view">pref.enable_texture_view</string>
+    <string name="pref_key_enable_detached_surface_texture">pref.enable_detached_surface_texture</string>
+    <string name="pref_key_enable_background_play">pref.enable_background_play</string>
+    <string name="pref_key_using_media_codec">pref.using_media_codec</string>
+    <string name="pref_key_using_media_codec_auto_rotate">pref.using_media_codec_auto_rotate</string>
+    <string name="pref_key_using_opensl_es">pref.using_opensl_es</string>
+    <string name="pref_key_pixel_format">pref.pixel_format</string>
+    <string name="pref_key_last_directory"></string>
+    <!--************************************************播放器************************************************-->
+
+    <!--杨文武-->
+    <string name="welcome_time">跳过</string>
+    <string name="homeactivity_exittime">再按一次退出东方大剧院</string>
+    <string name="channel_editmode">频道管理最多只能放8个</string>
+    <string name="channel_iseditmode">请在编辑模式下调整顺序</string>
+    <string name="homeactivity_data_error">数据异常!</string>
+    <string name="homeactivity_layout_error">服务器传的布局格式不正确!</string>
+    <string name="homeactivity_showlayout_error">不能够展示布局!</string>
+    <string name="updata_request_error">版本检测请求异常，请重试 !</string>
+    <string name="updata_request_null">版本检测返回数据为空，请重试 !</string>
+    <string name="updata_request_format_error">版本检测返回数据格式异常，请重试 !</string>
+    <string name="updata_request_detection_error">版本检测返回数据码错误，请重试 !</string>
+    <string name="updata_request_detection_illegal">版本检测返回数据不合法，请重试 !</string>
+    <string name="updata_request_format_ok">恭喜您，当前已是最新版本</string>
+    <string name="updata_request_downloading">正在下载中...</string>prompt dialog box
+    <string name="updata_request_prompt_dialogbox">弹出升级提示框</string>
+    <string name="updata_request_md5_error">文件md5校验错误，下载失败！</string>
+    <string name="updata_request_prompt_name">升级包下载完成，重命名为host_upgrade.apk</string>
+    <string name="updata_request_prompt_nameerror">文件重命名失败！</string>
+    <string name="updata_request_format_highest">本地已经有下载好的高版本升级安装包，开始安装流程!</string>
+    <string name="updata_request_format_install_ok">升级成功，本地版本和下载的安装包版本一致!</string>
+    <string name="updata_md5">下载文件MD5：</string>
+    <string name="updata_request_md5"> , 接口中md5：</string>
+    <string name="updata_request_locality_format">本地已经是最新的版本 !!!</string>
+    <string name="updata_request_url_null">返回数据不合法，versionName是0，或者，fid和url都为空!!!</string>
+    <string name="updata_install">检测到升级，开始执行升级流程!</string>
+    <string name="updata_request_format_nook">本地没有缓存的升级信息数据，或者数据不一致，或者下载未完成，继续进行逻辑处理</string>
+    <string name="updata_on_problem">未知错误</string>
+    <string name="updata_request_breakpoint_error">断点文件异常</string>
+    <string name="updata_network_error">网络异常</string>
+    <string name="updata_read_write_error">读写异常</string>
+    <string name="updata_server_error">服务器异常</string>
+    <string name="updata_md5_error">md5校验失败</string>
+    <string name="no_network">请链接网络后点击重试</string>
+    <string name="is_downloading">正在下载...</string>
+    <string name="the_download_is_complete">下载完成!</string>
+    <string name="updata_discover_versions">发现新版本</string>
+    <string name="be_coming">来啦</string>
+    <string name="no_introduction">暂无介绍</string>
+    <string name="server_error_customer_service">服务器数据错误，请联系客服</string>
+    <string name="file_write_failed_customer_service">文件写入失败，请联系客服</string>
+    <string name="network_is_not_connected_network_first">网络未连通，请先检查网络</string>
+    <string name="download_file_exception_customer_service">下载文件异常,请联系客服</string>
+    <string name="homeone_onerror_network">数据请求失败请点击重试</string>
+    <string name="webview_title">数据加载失败</string>
+    <string name="webview_onerror_text">页面加载失败</string>
+    <string name="webview_onerror_text1">点击页面刷新重试</string>
+
+    <!--安星霖-->
+
+
+
+    <!--张晓阳-->
+    <!--转播页面-->
+    <string name="txt_home_two_xianchang">现场</string>
+    <string name="txt_home_two_luxiang">录像</string>
+    <string name="txt_home_two_yanchushijian">演出时间：</string>
+    <string name="txt_home_two_weikaishi">预告</string>
+    <string name="txt_home_two_zhibozhong">直播中</string>
+    <string name="txt_home_two_huikan">回看</string>
+    <string name="txt_home_two_yijieshu">已结束</string>
+    <string name="txt_home_two_dianbo">点播</string>
+
+    <!--筛选页面-->
+    <string name="txt_home_three_title">筛选</string>
+    <string name="txt_home_three_title_1">列表</string>
+
+    <!--梁义成-->
+    <!--我的-->
+    <string name="user_my">我的</string>
+    <string name="user_sys">扫一扫</string>
+    <string name="user_login_registered">登录/注册</string>
+    <string name="user_play_record">播放记录</string>
+    <string name="user_collection">我的收藏</string>
+    <string name="user_yuyue">我的预约</string>
+    <string name="user_vip_center">会员中心</string>
+    <string name="user_open_vip">开通会员</string>
+    <string name="user_trading_record">交易记录</string>
+    <string name="user_message">我的消息</string>
+    <string name="message">消息</string>
+    <string name="user_advise">意见反馈</string>
+    <string name="user_setting">设置</string>
+    <string name="login_success">登录成功</string>
+    <string name="get_user_info_faile">用户信息获取失败</string>
+    <string name="unknown">未知</string>
+    <string name="percent">%</string>
+
+    <string name="no_yuyue">暂无预约</string>
+    <string name="you_no_yuyue">您还未预约任何内容</string>
+    <string name="goto_yuyue">预约后就不怕错过精彩内容啦！</string>
+
+    <string name="no_deal_record">没有任何交易记录</string>
+    <string name="about_me">关于我们</string>
+    <string name="version_name">东方大剧院</string>
+    <string name="login_text_df">欢迎登录东方大剧院</string>
+    <string name="login_text3">使用第三方登录，登录更便捷</string>
+    <string name="wx_login_text">微信登录</string>
+    <string name="ggdf_copyright">国广东方 版权所有</string>
+    <string name="play">播放</string>
+    <string name="cache">缓存</string>
+    <string name="no_wifi_load">无Wi-Fi时允许加载视频</string>
+    <string name="delect_cache">清理缓存</string>
+    <string name="cancle">取消</string>
+    <string name="sure_delect_cache">确定要清除缓存吗？</string>
+    <string name="exit_success">退出成功</string>
+    <string name="exit_faile">退出失败</string>
+
+    <string name="no_data">暂无数据</string>
+    <string name="select_all">全选</string>
+    <string name="cancel_select_all">取消全选</string>
+    <string name="delect0">删除(0)</string>
+    <string name="delect">删除</string>
+    <string name="collection">收藏</string>
+    <string name="no_collection">暂无收藏</string>
+    <string name="already_load_all">已加载全部</string>
+    <string name="you_no_collection">您还没有收藏任何剧集</string>
+    <string name="collection_you_like">收藏喜欢的剧集，会实时收到更新提醒</string>
+    <string name="no_play_record">暂无播放记录</string>
+    <string name="you_no_play_record">您还没有看过任何视频</string>
+    <string name="goto_look">赶紧观看视频吧！</string>
+
+    <string name="please_login">请先登录</string>
+    <string name="product_package_title">超值产品推荐</string>
+    <string name="kami_activate">卡密激活</string>
+    <string name="kami_edit">输入18位卡密</string>
+    <string name="kami_expire">序列号无效或已过期</string>
+    <string name="edit_number">输入序列码</string>
+    <string name="kami_commit">提交</string>
+    <string name="warm_prompt">温馨提示</string>
+    <string name="please_edit_kami">请输入卡密号</string>
+    <string name="please_edit_18_kami">请输入18位卡密号</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="wx_pay">微信</string>
+    <string name="alipay">支付宝</string>
+    <string name="wap">wap</string>
+    <string name="fast_payment">快捷支付</string>
+    <string name="km_pay">卡密</string>
+    <string name="voucher">代金券</string>
+    <string name="give">赠送</string>
+    <string name="else_pay">其他</string>
+    <string name="voucher0">优惠券</string>
+    <string name="money">￥</string>
+    <string name="record_info">订单详情</string>
+    <string name="product">产品包</string>
+    <string name="order_amount">订单金额</string>
+    <string name="order_amount0">订单金额：</string>
+    <string name="pay_amount">支付金额</string>
+    <string name="pay_way">支付方式</string>
+    <string name="used_voucher">所用卡券</string>
+    <string name="pay_time">支付时间</string>
+    <string name="exp_time">到期时间</string>
+    <string name="trad_no">订单号码</string>
+    <string name="trad_no0">订单编号：</string>
+    <string name="pay">付费</string>
+    <string name="pay_success">购买成功</string>
+    <string name="pay_faile">下单失败</string>
+    <string name="wv_pay">微信支付</string>
+    <string name="wv_pay0">亿万用户的选择，更快更安全</string>
+    <string name="validity">有效期：</string>
+    <string name="date_of_expiry">有效期至</string>
+    <string name="affirm">确认</string>
+    <string name="select_voucher">选择优惠券</string>
+    <string name="unuse_voucher">不使用优惠券</string>
+    <string name="no_voucher">您还没有优惠券</string>
+    <string name="can_use_voucher">可使用</string>
+    <string name="has_use_voucher">已使用</string>
+    <string name="expired_voucher">已过期</string>
+    <string name="you_no_can_use_voucher">您还没有可使用优惠券</string>
+    <string name="you_no_has_use_voucher">您还没有已使用优惠券</string>
+    <string name="you_no_expired_voucher">您还没有已过期优惠券</string>
+    <string name="today">今天</string>
+    <string name="within_week">一周以内</string>
+    <string name="long_ago">更早以前</string>
+    <string name="total">合计</string>
+    <string name="affirm_pay">确认付款</string>
+
+
+    <!--葛帅鹏-->
+    <string name="search">取消</string>
+    <string name="historical">历史关键词</string>
+    <string name="keyword">换个关键词试试</string>
+    <string name="everybody">大家都在搜</string>
+    <string name="lmsorry">抱歉无</string>
+    <string name="searchresult">的搜索结果</string>
+    <string name="release">上映时间:\u3000</string>
+    <string name="troup">剧团:\u3000</string>
+    <string name="tostar">主演:\u3000</string>
+    <string name="creator">主创:\u3000</string>
+</resources>

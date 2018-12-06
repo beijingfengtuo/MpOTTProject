@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<cn.cibnmp.ott.library.pullable.PullableScrollView
+    android:id="@+id/detail_scrollview"
+    android:layout_width="match_parent"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+        <LinearLayout
+            android:id="@+id/detail_scroll_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#55cccccc"
+            android:orientation="vertical"></LinearLayout>
+
+
+
+
+</cn.cibnmp.ott.library.pullable.PullableScrollView>

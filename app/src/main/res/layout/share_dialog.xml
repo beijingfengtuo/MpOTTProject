@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/share_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="分享到"
+        android:textColor="@color/setting_black2"
+        android:textSize="@dimen/detail_content_title2" />
+
+    <LinearLayout
+        android:id="@+id/share_ll1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <include
+            android:id="@+id/share_item1"
+            layout="@layout/share_item_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_weight="1"></include>
+
+        <include
+            android:id="@+id/share_item2"
+            layout="@layout/share_item_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"></include>
+
+        <include
+            android:id="@+id/share_item3"
+            layout="@layout/share_item_layout"
+            android:layout_width="0dp"
+            android:visibility="invisible"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"></include>
+
+        <include
+            android:id="@+id/share_item4"
+            layout="@layout/share_item_layout"
+            android:layout_width="0dp"
+            android:visibility="invisible"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="22dp"
+            android:layout_weight="1"></include>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/share_ll2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <include
+            android:id="@+id/share_item5"
+            layout="@layout/share_item_layout"
+            android:layout_width="0dp"
+            android:visibility="invisible"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_weight="1"></include>
+
+        <include
+            layout="@layout/share_item_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"></include>
+
+        <include
+            layout="@layout/share_item_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"></include>
+
+        <include
+            layout="@layout/share_item_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="22dp"
+            android:layout_weight="1"></include>
+    </LinearLayout>
+
+</LinearLayout>

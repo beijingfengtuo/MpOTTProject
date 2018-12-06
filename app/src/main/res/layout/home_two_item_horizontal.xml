@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/horizontal_rl"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+    <RelativeLayout
+        android:layout_width="324px"
+        android:layout_height="182px"
+        android:layout_marginLeft="26px">
+        <ImageView
+            android:id="@+id/img_home_two_item_horizontal_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:background="@color/black_hui8" />
+        <!--&lt;!&ndash;直播状态 直播中&ndash;&gt;-->
+        <TextView
+            android:id="@+id/tv_home_two_item_horizontal_status"
+            android:layout_width="74px"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8px"
+            android:layout_marginLeft="8px"
+            android:layout_alignParentLeft="true"
+            android:paddingTop="5px"
+            android:paddingBottom="5px"
+            android:gravity="center"
+            android:text=""
+            android:textSize="18px"
+            android:textColor="@color/white"
+            android:background="@color/transparent"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="182px"
+        android:layout_marginLeft="18px"
+        android:layout_marginRight="30px" >
+        <LinearLayout
+            android:id="@+id/ll_home_two_item_horizontal_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_home_two_item_horizontal_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:lineSpacingExtra="8px"
+                android:ellipsize="end"
+                android:text=""
+                android:layout_marginTop="22px"
+                android:textColor="@color/black3"
+                android:textSize="24px" />
+
+            <TextView
+                android:id="@+id/tv_home_two_item_horizontal_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22px"
+                android:visibility="visible"
+                android:text=""
+                android:lines="1"
+                android:singleLine="true"
+                android:textColor="@color/colore_home12"
+                android:textSize="22px" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

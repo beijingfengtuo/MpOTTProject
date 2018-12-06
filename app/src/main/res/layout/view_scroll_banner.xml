@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/tv_brl_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/tv_banner2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="未知"
+                android:textColor="@color/white"
+                android:textSize="@dimen/home_four_fragment_f" />
+
+            <ImageView
+                android:id="@+id/tv_clock2"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_below="@id/tv_banner2"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="2dp"
+                android:background="@mipmap/live_clock" />
+
+            <TextView
+                android:id="@+id/tv_banner22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_banner2"
+                android:layout_marginTop="1dp"
+                android:layout_toRightOf="@id/tv_clock2"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="00:00"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tv_brl_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/tv_banner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="未知"
+                android:textColor="@color/white"
+                android:textSize="@dimen/home_four_fragment_f" />
+
+            <ImageView
+                android:id="@+id/tv_clock1"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_below="@id/tv_banner1"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="2dp"
+                android:background="@mipmap/live_clock" />
+
+            <TextView
+                android:id="@+id/tv_banner11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_banner1"
+                android:layout_marginTop="1dp"
+                android:layout_toRightOf="@id/tv_clock1"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="00:00"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60px"
+            android:layout_marginTop="20px">
+
+            <ImageView
+                android:id="@+id/channel_push_button"
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:scaleType="fitXY"
+                android:src="@mipmap/channel_getback" />
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:text="@string/my_cahnnel"
+                android:textColor="@color/black"
+                android:textSize="30px" />
+
+            <ImageView
+                android:id="@+id/defaultsort_imag"
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/defaultsort_text"
+                android:scaleType="fitXY"
+                android:src="@mipmap/defaultsort_order"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/defaultsort_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/sanchu"
+                android:layout_marginRight="30px"
+                android:text="@string/defaultsort_order"
+                android:textColor="@color/colore_home8"
+                android:textSize="24px"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/sanchu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/tv_btn_edit"
+                android:src="@mipmap/ic_channel_management_edit" />
+
+            <TextView
+                android:id="@+id/tv_btn_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:gravity="center"
+                android:text="@string/edit"
+                android:textColor="@color/colore_home8"
+                android:textSize="24px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@mipmap/channel_above"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="110px"
+                android:layout_height="27px"
+                android:layout_marginLeft="70px"
+                android:layout_marginTop="60px"
+                android:src="@mipmap/selected_channel" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:padding="38dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="70px"
+            android:background="@mipmap/channel_below"
+            android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="110px"
+            android:layout_height="27px"
+            android:layout_marginLeft="10px"
+            android:src="@mipmap/alternative_channel" />
+
+        <GridView
+            android:id="@+id/channel_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="20px"
+            android:listSelector="@android:color/transparent"
+            android:layout_marginTop="15px"
+            android:horizontalSpacing="30px"
+            android:verticalSpacing="50px"
+            android:numColumns="4"
+            android:layout_marginBottom="30px"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

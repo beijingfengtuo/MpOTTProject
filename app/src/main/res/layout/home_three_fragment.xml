@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rl_home_title_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <include
+            android:id="@+id/home_title_head"
+            layout="@layout/home_title_in"/>
+    </RelativeLayout>
+
+    <!--Tab布局-->
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_home_title_head">
+
+        <RelativeLayout
+            android:id="@+id/rl_three_tab"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:background="@mipmap/home_tab_bj">
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tl_three_tabs_ocvt"
+                android:layout_width="wrap_content"
+                android:layout_height="60px"
+                android:layout_marginRight="20px"
+                android:layout_marginLeft="30px"
+                android:layout_centerVertical="true"
+                app:tabIndicatorHeight="6px"
+                app:tabIndicatorColor="@color/white"
+                app:tabMode="scrollable"
+                android:fadingEdge="none"
+                android:overScrollMode="never"
+                app:tabSelectedTextColor="@color/white"
+                app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+                app:tabTextColor="@color/channel_inag" />
+        </RelativeLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_three_variety_ocvt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_three_tab"
+            android:background="@color/vip_price_color" />
+    </RelativeLayout>
+
+</RelativeLayout>

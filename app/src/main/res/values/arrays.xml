@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="indicator_colors">
+        <item>@color/indicator_1</item>
+        <item>@color/indicator_2</item>
+        <item>@color/indicator_3</item>
+        <item>@color/indicator_4</item>
+    </array>
+
+    <integer-array  name="spring_progress_colors">
+        <item>@color/spring_progress_color_1</item>
+        <item>@color/spring_progress_color_2</item>
+        <item>@color/spring_progress_color_3</item>
+        <item>@color/spring_progress_color_4</item>
+        <item>@color/spring_progress_color_5</item>
+        <item>@color/spring_progress_color_6</item>
+        <item>@color/spring_progress_color_7</item>
+        <item>@color/spring_progress_color_8</item>
+        <item>@color/spring_progress_color_9</item>
+        <item>@color/spring_progress_color_10</item>
+    </integer-array>
+</resources>

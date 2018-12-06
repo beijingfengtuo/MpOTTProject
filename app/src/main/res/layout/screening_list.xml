@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rl_null_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_null_data"
+            android:layout_width="280px"
+            android:layout_height="280px"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/and_yuyue_no" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_null_data"
+            android:layout_marginTop="46px"
+            android:layout_centerHorizontal="true"
+            android:text="@string/no_data"
+            android:textColor="@color/black"
+            android:textSize="28px"/>
+    </RelativeLayout>
+
+    <cn.cibnmp.ott.library.pullable.PullToRefreshLayout
+        android:id="@+id/screening_list_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/refresh_head" />
+        <cn.cibnmp.ott.library.pullable.PullableScrollView
+            android:id="@+id/screening_list_scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:id="@+id/screening_list_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <cn.cibnmp.ott.widgets.pmrecyclerview.widget.GridViewForScrollView
+                    android:id="@+id/screening_list_grid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingTop="32px"
+                    android:paddingBottom="32px"
+                    android:layout_marginRight="20px"
+                    android:layout_marginLeft="20px"
+                    android:horizontalSpacing="16px"
+                    android:verticalSpacing="32px"
+                    android:listSelector="@color/transparent"
+                    android:numColumns="3"
+                    android:stretchMode="columnWidth" />
+
+            </RelativeLayout>
+
+        </cn.cibnmp.ott.library.pullable.PullableScrollView>
+
+        <include layout="@layout/load_more" />
+    </cn.cibnmp.ott.library.pullable.PullToRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/octv_looding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@color/transparent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/octv_ivpi"
+            android:layout_width="66px"
+            android:layout_height="66px"
+            android:layout_centerInParent="true"
+            android:src="@drawable/progress_icon" />
+    </RelativeLayout>
+</RelativeLayout>

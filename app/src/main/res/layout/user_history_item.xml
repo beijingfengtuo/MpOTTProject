@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tagText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="0"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/item_left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/hui_s"
+            android:layout_width="2dp"
+            android:layout_height="@dimen/user_play_history_5"
+            android:layout_marginLeft="30px"
+            android:background="@color/colore_home11"/>
+
+        <RelativeLayout
+            android:id="@+id/user_left_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/hui_s"
+            android:paddingBottom="@dimen/user_play_history_2"
+            android:paddingTop="@dimen/user_play_history_2">
+
+            <ImageView
+                android:id="@+id/user_left_img"
+                android:layout_width="@dimen/user_play_history_3"
+                android:layout_height="@dimen/user_play_history_4"
+                android:scaleType="fitXY"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10sp"
+                android:layout_toRightOf="@id/user_left_img"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/vidio_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colore_home6"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/vidio_londing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:textColor="@color/colore_home9"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_right"
+        android:layout_width="130px"
+        android:layout_height="match_parent"
+        android:background="@color/red3" >
+
+        <TextView
+            android:id="@+id/item_right_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/delect"
+            android:textSize="36px"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</LinearLayout>

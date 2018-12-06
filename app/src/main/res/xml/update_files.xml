@@ -1,0 +1,11 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-path
+        name="cache"
+        path="Android/data/cn.octv.ltc/" />
+    <external-path
+        name="cibn"
+        path="." />
+    <cache-path
+        name="download"
+        path="." />
+</resources>

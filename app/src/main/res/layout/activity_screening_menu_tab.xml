@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/rl_screening_menu_tab_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:paddingLeft="34px"
+        android:paddingRight="34px">
+        <cn.cibnmp.ott.widgets.ScreeTabLayout
+            android:id="@+id/tl_screening_menu_tab_1"
+            android:layout_width="match_parent"
+            android:layout_height="64px"
+            android:layout_centerVertical="true"
+            app:tabIndicatorHeight="0px"
+            app:tabMode="scrollable"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextAppearance="@style/ScreeningTabTextAppearance"
+            app:tabTextColor="@color/black3"
+            app:tabBackground="@color/transparent"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_screening_menu_tab_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/tl_screening_menu_tab_1"
+            android:background="@color/transparent" />
+    </RelativeLayout>
+
+</RelativeLayout>

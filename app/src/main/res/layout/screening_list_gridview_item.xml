@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <RelativeLayout
+        android:id="@+id/three_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/item0"
+            layout="@layout/home_one_item_vertical"
+            android:layout_width="218px"
+            android:layout_height="366px"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</RelativeLayout>

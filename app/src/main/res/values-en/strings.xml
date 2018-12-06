@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">高清影视</string>
+    <string name="slogan">Ultimate experience only good-looking</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="home_title_text">Open membership can be free advertising, free to see more large theaters</string>
+    <string name="user_sign_in_text">Login multiport synchronous playback recording</string>
+    <string name="user_sign_in_text2">Login multiport synchronization record collection</string>
+    <string name="home_three_grid_text">Exclusive Theater</string>
+    <string name="home_one_item_text">Cinema blockbusters</string>
+
+</resources>

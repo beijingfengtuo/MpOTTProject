@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_null_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_null_data"
+            android:layout_width="160px"
+            android:layout_height="160px"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/and_yuyue_no" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_null_data"
+            android:layout_marginTop="46px"
+            android:layout_centerHorizontal="true"
+            android:text="@string/no_data"
+            android:textColor="@color/black"
+            android:textSize="28px"/>
+    </RelativeLayout>
+
+    <cn.cibnmp.ott.library.pullable.PullToRefreshLayout
+        android:id="@+id/home_two_live_item_video_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/refresh_head" />
+        <cn.cibnmp.ott.library.pullable.PullableScrollView
+            android:id="@+id/home_two_live_item_video_scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:id="@+id/home_two_live_item_video_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <cn.cibnmp.ott.widgets.pmrecyclerview.widget.GridViewForScrollView
+                    android:id="@+id/home_two_live_item_video_grid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingTop="30px"
+                    android:paddingBottom="20px"
+                    android:verticalSpacing="20px"
+                    android:listSelector="@color/transparent"
+                    android:numColumns="1"
+                    android:stretchMode="columnWidth" />
+
+            </RelativeLayout>
+
+        </cn.cibnmp.ott.library.pullable.PullableScrollView>
+
+        <include layout="@layout/load_more" />
+    </cn.cibnmp.ott.library.pullable.PullToRefreshLayout>
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false">
+
+    <cn.cibnmp.ott.widgets.pmrecyclerview.widget.CRelativeLayout
+        android:id="@+id/pb_load_layout"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="276.7dp">
+
+        <cn.cibnmp.ott.widgets.pmrecyclerview.widget.CImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/host_upgrade_loading_bg" />
+
+        <cn.cibnmp.ott.widgets.pmrecyclerview.widget.CProgressBar
+            android:id="@+id/pb_load"
+            android:layout_width="66.7dp"
+            android:layout_height="66.7dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:indeterminateDrawable="@drawable/host_check_pro"
+            android:indeterminateDuration="720" />
+    </cn.cibnmp.ott.widgets.pmrecyclerview.widget.CRelativeLayout>
+
+
+    <cn.cibnmp.ott.widgets.pmrecyclerview.widget.CTextView
+        android:id="@+id/tv_load_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pb_load_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="23.3dp"
+        android:text="版本检测中‧‧‧"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+
+</RelativeLayout>

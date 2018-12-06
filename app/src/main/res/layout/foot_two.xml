@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/vip_price_color"
+    android:clipChildren="false" >
+
+    <RelativeLayout
+        android:id="@+id/ll_bottom_slogan"
+        android:layout_width="match_parent"
+        android:layout_height="160px" >
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-42px"
+            android:layout_marginRight="-42px"
+            android:background="@color/ivory" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            >
+
+            <LinearLayout
+                android:id="@+id/ll_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginRight="10px"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/user_sign_img_text" />
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/slogan"
+                    android:textSize="9sp"
+                    android:textColor="@color/colore_home11"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_toRightOf="@id/ll_tv"
+                android:src="@mipmap/slogan_right" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_toLeftOf="@id/ll_tv"
+                android:src="@mipmap/slogan_left" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

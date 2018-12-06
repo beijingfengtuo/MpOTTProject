@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textView1"
+                android:layout_marginLeft="6dp"
+                android:drawableLeft="@drawable/left_yun"
+                android:gravity="center_vertical"
+                android:drawablePadding="5dp"
+                android:text="选集"
+                android:textColor="@color/colore_home3"
+                android:textSize="@dimen/detial_title_size" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="26sp"
+            android:layout_height="26sp"
+            android:layout_marginRight="2dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:clickable="true"
+            android:src="@drawable/share_01" />
+        <TextView
+            android:id="@+id/episode_update_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imageView1"
+            android:text="更新至20160505期"
+            android:textColor="#c79b70"
+            android:layout_marginRight="15dp"
+            android:textSize="@dimen/detial_content_size" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/episode_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/linehui"
+        android:dividerHeight="1px" />
+
+    <TextView
+        android:id="@+id/null_textview"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:paddingTop="15dp"
+        android:text="抱歉，无剧集信息"
+        android:textColor="@color/black_hui2"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerVertical="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/home_page_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="直播专区"
+            android:textColor="@color/colore_home1"
+            android:textSize="@dimen/grid_title_size" />
+
+        <TextView
+            android:id="@+id/home_one_item_tag"
+            android:layout_width="1dp"
+            android:layout_height="34px"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/home_page_name" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="34px"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/home_one_item_tag"
+            android:background="@mipmap/home_item_title_bg" />
+    </RelativeLayout>
+</RelativeLayout>

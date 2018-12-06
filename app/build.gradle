@@ -1,0 +1,194 @@
+apply plugin: 'com.android.application'
+
+def releaseTime() {
+    return new Date().format("yyyyMMdd", TimeZone.getTimeZone("UTC"))
+}
+
+def appName() {
+    return "epg";
+}
+//正式
+def buildType;
+def appId = "\"1021\"";
+def projId = "\"105\"";
+//测试
+//def appId = "\"1014\"";
+//def projId = "\"106\"";
+
+android {
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+    defaultConfig {
+        applicationId "cn.cibnhp.grand"
+        minSdkVersion 14
+        targetSdkVersion 25
+        versionCode 10300
+        versionName "1.0.3.0"
+//        versionCode 10100
+//        versionName "1.0.1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        config {
+            keyAlias 'cibn.epg'
+            keyPassword 'cibncibn'
+            storeFile file('../sign/android.keystore')
+            storePassword 'cibncibn'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            zipAlignEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+            buildConfigField("String", "appId", appId)
+            buildConfigField("String", "projId", projId)
+        }
+
+        debug {
+            signingConfig signingConfigs.config
+            buildConfigField("String", "appId", appId)
+            buildConfigField("String", "projId", projId)
+        }
+
+
+        applicationVariants.all { variant ->
+            variant.outputs.each { output ->
+                def outputFile = output.outputFile
+                if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                    if (outputFile.name.endsWith('release.apk'))
+                        buildType = "release"
+                    else if (outputFile.name.endsWith('debug.apk'))
+                        buildType = "debug"
+                    def fileName = "${appName()}_v${defaultConfig.versionName}_${defaultConfig.versionCode}_${releaseTime()}_${variant.productFlavors[0].name}_${buildType}.apk"
+                    output.outputFile = new File(outputFile.parent, fileName)
+                }
+            }
+        }
+    }
+    productFlavors {
+
+        //测试环境渠道
+//        "10026" {
+//            manifestPlaceholders = [umengChannelId: "A10026", channelId: "10026"]
+//        }
+
+//        //百度助手
+//        "20161" {
+//            manifestPlaceholders = [umengChannelId: "A20161", channelId: "20161"]
+//        }
+//
+//        //百度91助手
+//        "20164" {
+//            manifestPlaceholders = [umengChannelId: "A20164", channelId: "20164"]
+//        }
+//
+//        //安卓市场
+//        "20162" {
+//            manifestPlaceholders = [umengChannelId: "A20162", channelId: "20162"]
+//        }
+//
+//        //豌豆荚渠道
+//        "20163" {
+//            manifestPlaceholders = [umengChannelId: "A20163", channelId: "20163"]
+//        }
+//
+//        //应用宝
+//        "20165" {
+//            manifestPlaceholders = [umengChannelId: "20165", channelId: "20165"]
+//        }
+//
+//        //360渠道
+//        "20166" {
+//            manifestPlaceholders = [umengChannelId: "20166", channelId: "20166"]
+//        }
+//
+//        //搜狗手机助手
+//        "20188" {
+//            manifestPlaceholders = [umengChannelId: "20188", channelId: "20188"]
+//        }
+//
+//        //魅族应用商店
+//        "20187" {
+//            manifestPlaceholders = [umengChannelId: "20187", channelId: "20187"]
+//        }
+//
+//        //华为应用商店
+        "20186" {
+            manifestPlaceholders = [umengChannelId: "20186", channelId: "20186"]
+        }
+//
+//        //vivo应用商店
+//        "20185" {
+//            manifestPlaceholders = [umengChannelId: "20185", channelId: "20185"]
+//        }
+//
+//        //OPPO应用商店
+//        "20184" {
+//            manifestPlaceholders = [umengChannelId: "20184", channelId: "20184"]
+//        }
+//
+//        //小米应用商店
+//        "20183" {
+//            manifestPlaceholders = [umengChannelId: "20183", channelId: "20183"]
+//        }
+
+        //活动专用
+//        "20191" {
+//            manifestPlaceholders = [umengChannelId: "A20191", channelId: "20191"]
+//        }
+
+        //保定通渠道
+//        "20241" {
+//            manifestPlaceholders = [umengChannelId: "A20241", channelId: "20241"]
+//        }
+
+    }
+
+    useLibrary 'org.apache.http.legacy'
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-beta4'
+    testCompile 'junit:junit:4.12'
+    compile 'com.zhy:autolayout:1.4.5'
+    compile project(':ijk')
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    //    微信、腾讯、微博jar
+    compile files('lib/libammsdk.jar')
+    compile files('lib/mta-sdk-1.6.2.jar')
+    compile files('lib/open_sdk_r5756.jar')
+    compile files('lib/weiboSDKCore_3.1.4.jar')
+    compile files('lib/commons-io-2.4.jar')
+    compile files('lib/cibndownload.jar')
+    compile files('lib/eventbus.jar')
+    compile files('lib/fastjson.jar')
+    compile files('lib/glide-3.7.0-cibn.jar')
+    compile files('lib/okhttp-3.4.1.jar')
+    compile files('lib/okio-1.11.0.jar')
+    compile files('lib/utdid4all-1.1.5.jar')
+}
+
+repositories {
+    mavenCentral()
+    flatDir {
+        dirs 'libs'
+    }
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="@color/transparent"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/ivProgressIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ble_progress_icon"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="14dp"/>
+    
+    <TextView
+        android:id="@+id/tv_contant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="正在加载,请稍候..."
+        android:textSize="14sp"
+        android:layout_marginRight="25dp"
+        android:textColor="@color/black2"
+        />
+
+</LinearLayout>

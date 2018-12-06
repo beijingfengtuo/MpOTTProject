@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:id="@+id/rl_home_three_other_variety_gridview_item_all"
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/layout_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_home_three_other_variety_gridview_item_show"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_home_three_other_variety_gridview_item_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/videopre_background"/>
+
+            <ImageView
+                android:id="@+id/img_home_three_other_variety_gridview_item_bg2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:background="@color/black40"/>
+
+            <ImageView
+                android:id="@+id/img_home_three_other_variety_gridview_item_play"
+                android:layout_width="70px"
+                android:layout_height="70px"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"
+                android:src="@mipmap/img_home_three_video_play_da_1" />
+
+            <!--重播按钮-->
+            <ImageView
+                android:id="@+id/img_home_three_other_variety_gridview_item_replay_play"
+                android:layout_width="70px"
+                android:layout_height="70px"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"
+                android:src="@mipmap/img_home_three_video_replay_play" />
+
+            <TextView
+                android:id="@+id/tv_home_three_other_variety_gridview_item_title"
+                android:layout_width="match_parent"
+                android:layout_height="60px"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="10px"
+                android:paddingRight="10px"
+                android:ellipsize="end"
+                android:visibility="gone"
+                android:lines="1"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="30px"
+                android:background="@drawable/img_home_three_video_title_foot_bg_1"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_home_three_other_variety_gridview_item_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_below="@+id/rl_home_three_other_variety_gridview_item_all"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/tv_home_three_other_variety_gridview_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20px"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="30px"/>
+
+        <TextView
+             android:id="@+id/tv_home_three_other_variety_gridview_item_add"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_toRightOf="@+id/tv_home_three_other_variety_gridview_item_name"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="30px"
+             android:text=""
+             android:textColor="@color/black_hui7"
+             android:textSize="30px"/>
+
+        <ImageView
+            android:id="@+id/img_home_three_other_variety_gridview_item_share"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20px"
+            android:src="@mipmap/img_home_three_share"/>
+
+        <ImageView
+            android:id="@+id/img_home_three_other_variety_gridview_item_collection"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:scaleType="fitXY"
+            android:layout_toLeftOf="@+id/img_home_three_other_variety_gridview_item_share"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20px"
+            android:visibility="gone"
+            android:src="@mipmap/img_home_three_collect"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20px"
+            android:visibility="gone"
+            android:layout_toLeftOf="@+id/img_home_three_other_variety_gridview_item_collection">
+            <ImageView
+                android:id="@+id/img_home_three_other_variety_gridview_item_zan"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:scaleType="fitXY"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10px"
+                android:src="@mipmap/img_home_three_zan_unfocus"/>
+
+            <TextView
+                android:id="@+id/tv_home_three_other_variety_gridview_item_zan_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/img_home_three_other_variety_gridview_item_zan"
+                android:text=""
+                android:textColor="@color/black_hui7"
+                android:textSize="20px"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

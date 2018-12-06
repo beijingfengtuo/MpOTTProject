@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_share_layout_selector">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/share_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50px"
+            android:layout_marginBottom="50px"
+            android:gravity="center"
+            android:text="分享至："
+            android:textColor="@color/channel_inag"
+            android:textSize="32px" />
+
+        <LinearLayout
+            android:id="@+id/share_ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40px"
+            android:orientation="horizontal">
+
+            <include
+                android:id="@+id/share_item1"
+                layout="@layout/share_item_frag_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"></include>
+
+            <include
+                android:id="@+id/share_item2"
+                layout="@layout/share_item_frag_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"></include>
+
+            <include
+                android:id="@+id/share_item3"
+                layout="@layout/share_item_frag_layout"
+                android:layout_width="0dp"
+                android:visibility="visible"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"></include>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/share_ll2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40px"
+            android:orientation="horizontal">
+            <include
+                android:id="@+id/share_item4"
+                layout="@layout/share_item_frag_layout"
+                android:layout_width="0dp"
+                android:visibility="invisible"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"></include>
+
+            <include
+                android:id="@+id/share_item5"
+                layout="@layout/share_item_frag_layout"
+                android:layout_width="0dp"
+                android:visibility="invisible"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"></include>
+
+            <include
+                android:id="@+id/share_item6"
+                layout="@layout/share_item_frag_layout"
+                android:layout_width="0dp"
+                android:visibility="invisible"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"></include>
+        </LinearLayout>
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/img_share_dialog_close"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_marginTop="30px"
+                android:layout_marginBottom="40px"
+                android:scaleType="fitXY"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/img_dialog_share_close"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

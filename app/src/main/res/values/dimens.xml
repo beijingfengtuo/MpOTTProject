@@ -1,0 +1,80 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- 首页 -->
+    <dimen name="home_title_bottom">95px</dimen>
+    <dimen name="home_title_name1">15dp</dimen>
+    <dimen name="home_title_size">12dp</dimen>
+
+    <!-- 用户登陆注册 -->
+    <dimen name="user_sign_in_text">28px</dimen>
+    <dimen name="user_sign_in_magen">1dp</dimen>
+
+    <!-- 大条目间隔 -->
+    <dimen name="item_distance">14dp</dimen>
+    <!-- 搜索结果列表小字体 -->
+    <dimen name="search_result_small">14sp</dimen>
+    <!-- 搜索结果列表大字体 -->
+    <dimen name="search_result_big">15sp</dimen>
+    <!-- 搜索结果文字item距离 -->
+    <dimen name="search_item_dis">5dp</dimen>
+    <!-- 蓝线与文字间距 -->
+    <dimen name="left_line_drawable_padding">5dp</dimen>
+    <!-- grid条目标题的文字大小 -->
+    <dimen name="grid_title_size">18sp</dimen>
+    <!-- 详情页模块标题文字大小 -->
+    <dimen name="detial_title_size">18sp</dimen>
+    <!-- 详情页模块标题文字大小 -->
+    <dimen name="detial_content_size">15sp</dimen>
+
+    <dimen name="home_exit_dialog_text1">15sp</dimen>
+
+    <!-- 顶部标题 -->
+    <dimen name="user_title">56sp</dimen>
+    <dimen name="user_title1">30sp</dimen>
+    <dimen name="user_title2">30sp</dimen>
+
+    <!-- 会员专区 -->
+    <dimen name="home_three_fragment_title">14sp</dimen>
+    <dimen name="home_three_fragment_title2">14sp</dimen>
+    <dimen name="home_three_fragment_title3">15sp</dimen>
+    <dimen name="home_three_fragment_title4">30dp</dimen>
+
+    <!-- 我的 -->
+    <dimen name="home_four_fragment_a">110sp</dimen>
+    <dimen name="home_four_fragment_b">80sp</dimen>
+    <dimen name="home_four_fragment_c">10px</dimen>
+    <dimen name="home_four_fragment_d">14sp</dimen>
+    <dimen name="home_four_fragment_e">53sp</dimen>
+    <dimen name="home_four_fragment_f">16sp</dimen>
+    <dimen name="home_four_fragment_g">32px</dimen>
+    <dimen name="home_four_fragment_h">24px</dimen>
+
+    <!-- 播放记录 -->
+    <dimen name="user_play_history_1">14sp</dimen>
+    <dimen name="user_play_history_2">8sp</dimen>
+    <dimen name="user_play_history_3">130sp</dimen>
+    <dimen name="user_play_history_4">72sp</dimen>
+    <dimen name="user_play_history_5">88sp</dimen>
+
+    <!-- 详情页 -->
+    <dimen name="detail_content_title1">60sp</dimen>
+    <dimen name="detail_content_title2">22sp</dimen>
+    <dimen name="detail_content_title3">26sp</dimen>
+    <dimen name="detail_content_title4">80sp</dimen>
+    <dimen name="detail_content_title5">20sp</dimen>
+    <dimen name="detail_content_title6">90sp</dimen>
+    <dimen name="detail_content_title7">52sp</dimen>
+    <dimen name="detail_content_title8">20sp</dimen>
+    <dimen name="detail_content_title9">16dp</dimen>
+    <dimen name="detail_content_title10">13sp</dimen>
+    <dimen name = "detail_content_sp18">12sp</dimen>
+    <dimen name="detail_content_sp45">30sp</dimen>
+    <dimen name = "detail_content_sp80">57sp</dimen>
+
+    <dimen name="feedback_margins">27px</dimen>
+
+</resources>

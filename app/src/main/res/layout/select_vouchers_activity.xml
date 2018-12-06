@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/select_vouchers_title"
+        layout="@layout/user_title_in" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/vip_price_color">
+
+        <ListView
+            android:id="@+id/lv_select_vouchers"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20px"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:id="@+id/rl_no_vouchers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/linehui"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/and_img"
+                android:layout_width="280px"
+                android:layout_height="280px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="78px"
+                android:background="@mipmap/and_without" />
+
+            <TextView
+                android:id="@+id/tv_no_vouchers_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/and_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80px"
+                android:gravity="center"
+                android:text="@string/no_voucher"
+                android:textColor="@color/colore_home3"
+                android:textSize="28px" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

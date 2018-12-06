@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/user_item_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="48dp"
+    android:background="@color/white" >
+
+    <Button
+        android:id="@+id/user_item_img"
+        android:layout_width="45px"
+        android:layout_height="45px"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30px"
+        android:background="@mipmap/set_message"
+        android:focusable="false" />
+
+    <TextView
+        android:id="@+id/user_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30px"
+        android:layout_toRightOf="@id/user_item_img"
+        android:text="@string/user_message"
+        android:textColor="@color/colore_home1"
+        android:textSize="26px" />
+
+    <TextView
+        android:id="@+id/user_item_go"
+        android:layout_width="30px"
+        android:layout_height="30px"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="18dp"
+        android:background="@mipmap/arrow_white"
+        android:focusable="false" />
+
+</RelativeLayout>

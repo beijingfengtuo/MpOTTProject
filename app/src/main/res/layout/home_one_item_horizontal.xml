@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/horizontal_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/horizontal_item_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+        <LinearLayout
+            android:id="@+id/ll_horizontal_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/horizontal_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:text=""
+                android:layout_marginTop="10px"
+                android:singleLine="true"
+                android:textColor="@color/black3"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/horizontal_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2px"
+                android:layout_marginBottom="10px"
+                android:visibility="gone"
+                android:text=""
+                android:lines="1"
+                android:singleLine="true"
+                android:textColor="@color/colore_home12"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/horizontal_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/ll_horizontal_desc"
+            android:scaleType="fitXY"
+            android:src="@mipmap/defaultpic" />
+
+        <!--直播状态 直播中-->
+        <TextView
+            android:id="@+id/horizontal_status"
+            android:layout_width="74px"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:layout_marginLeft="10px"
+            android:layout_alignParentLeft="true"
+            android:paddingTop="5px"
+            android:paddingBottom="5px"
+            android:gravity="center"
+            android:text=""
+            android:textSize="18px"
+            android:textColor="@color/white"
+            android:background="@color/transparent"/>
+    </RelativeLayout>
+
+</RelativeLayout>

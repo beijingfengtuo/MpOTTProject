@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/home_title_head"
+        layout="@layout/home_title_in" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/home_title_head"
+        android:background="@color/vip_price_color"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/user_detail"
+                layout="@layout/user_detail" />
+
+            <!--观看记录-->
+            <include
+                android:id="@+id/rl_paly_record"
+                layout="@layout/my_play_record_item"
+                android:layout_width="match_parent"
+                android:layout_height="110px"
+                android:layout_marginTop="12px" />
+
+            <RelativeLayout
+                android:id="@+id/rl_user_record"
+                android:layout_width="match_parent"
+                android:layout_height="267px"
+                android:background="@color/white"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/rl_user_record1"
+                    android:layout_width="330px"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20px"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/img_user_record_item1"
+                        android:layout_width="330px"
+                        android:layout_height="187px"
+                        android:scaleType="fitXY"
+                        android:background="@color/black_hui8" />
+
+                    <TextView
+                        android:id="@+id/tv_user_record_progress1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35px"
+                        android:layout_alignBottom="@id/img_user_record_item1"
+                        android:layout_alignRight="@id/img_user_record_item1"
+                        android:layout_marginBottom="6px"
+                        android:layout_marginRight="6px"
+                        android:background="@mipmap/time_bg"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="21px" />
+
+                    <TextView
+                        android:id="@+id/tv_user_record_name1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img_user_record_item1"
+                        android:layout_marginTop="20px"
+                        android:textColor="@color/colore_home3"
+                        android:textSize="22px" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_user_record2"
+                    android:layout_width="330px"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginRight="20px"
+                    android:layout_toRightOf="@id/rl_user_record1"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/img_user_record_item2"
+                        android:layout_width="330px"
+                        android:layout_height="187px"
+                        android:scaleType="fitXY"
+                        android:background="@color/black_hui8" />
+
+                    <TextView
+                        android:id="@+id/tv_user_record_progress2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35px"
+                        android:layout_alignBottom="@id/img_user_record_item2"
+                        android:layout_alignRight="@id/img_user_record_item2"
+                        android:layout_marginBottom="6px"
+                        android:layout_marginRight="6px"
+                        android:background="@mipmap/time_bg"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="21px" />
+
+                    <TextView
+                        android:id="@+id/tv_user_record_name2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img_user_record_item2"
+                        android:layout_marginTop="20px"
+                        android:textColor="@color/colore_home3"
+                        android:textSize="22px" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <!--我的收藏-->
+            <include
+                android:id="@+id/rl_collection"
+                layout="@layout/my_collection_item"
+                android:layout_width="match_parent"
+                android:layout_height="110px"
+                android:layout_marginTop="1px" />
+
+            <!--我的预约-->
+            <include
+                android:id="@+id/rl_yuyue"
+                layout="@layout/my_make_item"
+                android:layout_width="match_parent"
+                android:layout_height="110px"
+                android:layout_marginTop="1px" />
+
+            <!--会员中心-->
+            <include
+                android:id="@+id/rl_vip"
+                layout="@layout/my_vip_item"
+                android:layout_width="match_parent"
+                android:layout_height="110px"
+                android:layout_marginTop="12px" />
+
+            <!--交易记录-->
+            <include
+                android:id="@+id/rl_trading_record"
+                layout="@layout/my_trading_record_item"
+                android:layout_width="match_parent"
+                android:layout_height="110px"
+                android:layout_marginTop="1px" />
+
+            <!--代金券-->
+            <include
+                android:id="@+id/rl_vouchers"
+                layout="@layout/my_vouchers_item"
+                android:layout_width="match_parent"
+                android:layout_height="110px"
+                android:layout_marginTop="1px" />
+
+            <!--我的消息-->
+            <include
+                android:id="@+id/rl_message"
+                layout="@layout/my_message_item"
+                android:layout_width="match_parent"
+                android:layout_height="110px"
+                android:layout_marginTop="12px" />
+
+            <!--意见反馈-->
+            <include
+                android:id="@+id/rl_advise"
+                layout="@layout/my_advise_item"
+                android:layout_width="match_parent"
+                android:layout_height="110px"
+                android:layout_marginTop="12px" />
+
+            <!--我的设置-->
+            <include
+                android:id="@+id/rl_setting"
+                layout="@layout/my_setting_item"
+                android:layout_width="match_parent"
+                android:layout_height="110px"
+                android:layout_marginTop="12px" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

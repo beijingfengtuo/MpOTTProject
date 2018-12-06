@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/home_title_head"
+        layout="@layout/home_title_in" />
+
+    <RelativeLayout
+        android:id="@+id/live_title_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/home_title_head">
+
+        <cn.cibnmp.ott.widgets.pmrecyclerview.widget.ViewPagerStop
+            android:id="@+id/content_two_live_pager"
+            android:layout_width="match_parent"
+            android:layout_height="360px"
+            android:background="@mipmap/viewpager_bg" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            android:layout_alignBottom="@id/content_two_live_pager">
+
+            <LinearLayout
+                android:id="@+id/layout_two_live_viewGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/img_two_live_null_data"
+            android:layout_width="match_parent"
+            android:layout_height="400px"
+            android:visibility="gone"
+            android:scaleType="fitXY"
+            android:background="@mipmap/viewpager_bg"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/live_title_rl"
+        android:background="@color/vip_price_color">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:background="@mipmap/home_tab_bj"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:id="@+id/ll_home_two_live_item_scene"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:focusable="true">
+                <TextView
+                    android:id="@+id/btn_home_two_live_item_scene"
+                    android:layout_width="220px"
+                    android:layout_height="46px"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/txt_home_two_xianchang"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:background="@mipmap/live_tab_bg"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_home_two_live_item_video"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:focusable="true">
+            <TextView
+                android:id="@+id/btn_home_two_live_item_video"
+                android:layout_width="220px"
+                android:layout_height="46px"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/txt_home_two_luxiang"
+                android:textSize="16sp"
+                android:textColor="@color/channel_inag"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_two_live_variety_ocvt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/octv_looding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@color/transparent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/octv_ivpi"
+            android:layout_width="66px"
+            android:layout_height="66px"
+            android:layout_centerInParent="true"
+            android:src="@drawable/progress_icon" />
+    </RelativeLayout>
+</RelativeLayout>

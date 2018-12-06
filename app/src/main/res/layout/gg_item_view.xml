@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gg_item_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/gg_item_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:background="@mipmap/defaultpic3"/>
+
+    <TextView
+        android:id="@+id/gg_item_tv"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="left|center_vertical"
+        android:visibility="gone"
+        android:ellipsize="end"
+        android:lines="1"
+        android:paddingLeft="15dp"
+        android:text="400亿票房背后的10件事"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</RelativeLayout>
